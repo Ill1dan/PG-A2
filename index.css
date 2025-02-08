@@ -149,3 +149,93 @@
 }
 
 /* CSS For Nav Ends */
+
+/* CSS For Banner Starts */
+
+.banner{
+    padding: 0 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.125rem;
+}
+
+.banner-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.banner-left h3{
+    font-size: 3.5rem;
+    line-height: 3.813rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+#ban-1{
+    color: var(--ui-color2);
+}
+
+#ban-2{
+    color: var(--ui-color1);
+}
+
+.banner-left p{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+.banner-left button{
+    padding: 0.75rem 3rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: 0.5s ease;
+    align-self: flex-start;
+}
+
+.banner-left button:hover{
+    background-color: var(--ui-color1);
+}
+
+@media screen and (max-width: 576px){
+    .banner{
+        padding: 1.25rem 2rem;
+        flex-direction: column-reverse;
+        gap: 1.25rem;
+    }
+
+    .banner-left{
+        gap: 1.125rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .banner-left h3{
+        font-size: 2rem;
+        line-height: 2.188rem;
+    }
+
+    .banner-left p{
+        font-size: 0.875rem;
+    }
+
+    .banner-left button{
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        border-radius: 0.5rem;
+        align-self: center;
+    }
+
+    .banner-right img{
+        width: 21.25rem;
+    }
+}
+
+/* CSS For Banner Ends */
