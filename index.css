@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", serif;
+}
+
+/* Color Variables Starts */
+
+:root{
+    --primary-color: #ffffff;
+    --secondary-color: #000000;
+
+    --ui-color1: #01ACFD;
+    --ui-color2: #ffa500;
+
+    --text-color1: #05D4DF;
+    --text-color2: #5D58EF;
+
+    --background-banner-color: #C6E4D6;
+    --white-color: #ffffff;
+    --border-color: #0E0E0E;
+    --border-color-blurred: rgb(14, 14, 14, 0.15);
+    --shadow-color: rgb(0, 0, 0, 0.25);
+    --vision-box-1: rgb(84, 144, 245, 0.2);
+    --vision-box-2: #C6E4D6;
+    --vision-box-3: #F7EBCF;
+    --vision-box-1-button: #5490F5;
+    --vision-box-2-button: #09A15C;
+    --vision-box-3-button: #FFC239;
+    --vision-box-1-button-hover: #2168e2;
+    --vision-box-2-button-hover: #047240;
+    --vision-box-3-button-hover: #eba70a;
+}
+
+/* Color Variables Ends */
+
+/* CSS For Container Starts */
+
+.container{
+    background-color: var(--primary-color);
+}
+
+/* CSS For Container Ends */
+
+
+/* CSS For Nav Starts */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 6rem;
+}
+
+.nav-start{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-start h3{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+    gap : 2.5rem;
+}
+
+.nav ul li{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.nav ul li:nth-child(1){
+    color: var(--ui-color2);
+}
+
+.nav ul li:nth-child(2){
+    color: var(--ui-color1);
+}
+
+.nav ul li:nth-child(3){
+    color: var(--text-color1);
+}
+
+.nav ul li:nth-child(4){
+    color: var(--text-color2);
+}
+
+.nav-end button{
+    padding: 0.75rem 3rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    background-color: var(--ui-color2);
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.nav-end button:hover{
+    background-color: var(--ui-color1);
+}
+
+.menu-bar{
+    display: none;
+}
+
+@media screen and (max-width: 576px){
+    .nav{
+        padding: 1.25rem 2rem;
+        border-bottom: 0.063rem solid var(--ui-color2);
+    }
+
+    .nav-start img{
+        width: 2.875rem;
+        aspect-ratio: 1/1;
+    }
+
+    .nav-start h3{
+        display: none;
+    }
+
+    .nav ul{
+        display: none;
+    }
+
+    .nav-end{
+        display: none;
+    }
+
+    .menu-bar{
+        display: block;
+        cursor: pointer;
+        width: 1.875rem;
+        aspect-ratio: 1/1;
+    }
+}
+
+/* CSS For Nav Ends */
