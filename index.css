@@ -20,20 +20,13 @@
     --text-color1: #05D4DF;
     --text-color2: #5D58EF;
 
-    --background-banner-color: #C6E4D6;
-    --white-color: #ffffff;
-    --border-color: #0E0E0E;
-    --border-color-blurred: rgb(14, 14, 14, 0.15);
-    --shadow-color: rgb(0, 0, 0, 0.25);
-    --vision-box-1: rgb(84, 144, 245, 0.2);
-    --vision-box-2: #C6E4D6;
-    --vision-box-3: #F7EBCF;
-    --vision-box-1-button: #5490F5;
-    --vision-box-2-button: #09A15C;
-    --vision-box-3-button: #FFC239;
-    --vision-box-1-button-hover: #2168e2;
-    --vision-box-2-button-hover: #047240;
-    --vision-box-3-button-hover: #eba70a;
+    --curr-box-1: #DEF5FF;
+    --curr-box-2: #FFF4DC;
+    --curr-box-3: #F2E8FF;
+
+    --curr-text: #808080;
+
+
 }
 
 /* Color Variables Ends */
@@ -239,3 +232,144 @@
 }
 
 /* CSS For Banner Ends */
+
+/* CSS For Curriculum Starts */
+
+.curriculum{
+    padding: 3.75rem 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    background-image: url(assets/bg.png);
+}
+
+.curr-start h3{
+    font-size: 2.875rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.curr-container{
+    display: grid;
+    gap: 1.75rem;
+    grid-template-columns: repeat(3, minmax(15rem, 25rem));
+}
+
+.curr-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 2rem;
+    border-radius: 1.125rem;
+    gap: 1.75rem;
+}
+
+.curr-box h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.curr-box p{
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Raleway", serif;
+    color: var(--curr-text);
+    line-height: 1.769rem;
+}
+
+.curr-box span{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-color1);
+    cursor: pointer;
+}
+
+.curr-box:nth-child(1){
+    background: linear-gradient(var(--curr-box-1), var(--primary-color) 30%);
+    border: 0.063rem solid var(--curr-box-1);
+}
+
+.curr-box:nth-child(1) span{
+    color: var(--text-color1);
+}
+
+.curr-box:nth-child(2){
+    background: linear-gradient(var(--curr-box-2), var(--primary-color) 30%);
+    border: 0.063rem solid var(--curr-box-2);
+}
+
+.curr-box:nth-child(2) span{
+    color: var(--ui-color2);
+}
+
+.curr-box:nth-child(3){
+    background: linear-gradient(var(--curr-box-3), var(--primary-color) 30%);
+    border: 0.063rem solid var(--curr-box-3);
+}
+
+.curr-box:nth-child(3) span{
+    color: var(--text-color2);
+}
+
+.curr-arrow{
+    display: flex;
+    gap: 1rem;
+}
+.curr-arrow div{
+    width: 3.75rem;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    background: var(--ui-color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 576px){
+    .curriculum{
+        padding: 2.5rem 2rem;
+        gap: 1.25rem;
+    }
+
+    .curr-start h3{
+        font-size: 1.625rem;
+    }
+
+    .curr-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .curr-box{
+        padding: 2rem 1rem;
+    }
+
+    .curr-box h4{
+        font-size: 1.25rem;
+    }
+
+    .curr-box p{
+        font-size: 0.875rem;
+    }
+
+    .curr-box span{
+        font-size: 0.875rem;
+    }
+
+    .curr-arrow{
+        gap: 0.5rem;
+    }
+
+    .curr-arrow div{
+        display: none;
+    }
+}
+
+/* CSS For Curriculum Ends */
