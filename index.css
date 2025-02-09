@@ -161,6 +161,11 @@ marquee:hover{
     background-color: var(--ui-color2);
 }
 
+@media screen and (max-width: 576px){
+    marquee{
+        margin-top: 0.25rem;
+    }
+}
 /* CSS For Marquee Ends */
 
 /* CSS For Banner Starts */
@@ -554,21 +559,14 @@ marquee:hover{
         display: none;
     }
 
-    .story-box-lower h4{
-        font-size: 1.25rem;
-    }
-
     .story-box-lower h5{
-        font-size: 0.875rem;
-    }
-
-    .story-box-lower p{
-        font-size: 0.875rem;
+        font-size: 0.571rem;
+        line-height: 1.069rem;
     }
 
     .story-box-upper div{
         padding: 0.5rem 0.75rem;
-        font-size: 0.75rem;
+        font-size: 0.5rem;
     }
 
     .story-end button{
