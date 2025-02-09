@@ -145,6 +145,24 @@
 
 /* CSS For Nav Ends */
 
+/* CSS For Marquee Starts */
+
+marquee{
+    padding-block: 1.25rem;
+    background-color: var(--ui-color1);
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    font-weight: 500;
+    user-select: none;
+    transition: 0.5s ease;
+}
+
+marquee:hover{
+    background-color: var(--ui-color2);
+}
+
+/* CSS For Marquee Ends */
+
 /* CSS For Banner Starts */
 
 .banner{
