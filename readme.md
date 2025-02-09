@@ -15,6 +15,9 @@ This project is a school website designed to provide information about the schoo
 - **Enroll Button**: A button to enroll in the school.
 - **Hero Image**: An image of children representing the school's vision.
 
+### Marquee
+- **Scrolling Message**: A scrolling marquee that displays an empowering message about the school's mission and vision.
+
 ### Curriculum Section
 - **Standard Curriculum**: Information about the school's curriculum.
 - **Curriculum Boxes**: Details about different programs (Kinder, Elementary, Middle School) with images and descriptions.
